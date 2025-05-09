@@ -48,5 +48,5 @@ data['isoelectric_point'] = isoelectric_point_list
 data['sequence_length'] = sequence_length_list
 
 data.to_csv('dataset_paper_features', index=False)
-print("Data saved to 'cleaned_data_with_all_features.csv'.")
+print("Data saved")
 print(data.head())

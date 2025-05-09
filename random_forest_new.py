@@ -9,7 +9,7 @@ data = pd.read_csv('grouped_cystein5_feature_ex.csv')
 
 print(data.head())
 
-X = data[['hydrophobicity','seq_length', 'molecular_weight', 'instability_index', 'isoelectric_point', 'cystein_count','aromaticity']]  # Feature: hydrophobicity
+X = data[['hydrophobicity','seq_length', 'molecular_weight', 'instability_index', 'isoelectric_point', 'cystein_count','aromaticity']]
 y = data['retention_time']    # Target: retention time
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
